@@ -1,0 +1,133 @@
+ .navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background: transparent;
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 0.567);
+}
+
+/* Left Links */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: maroon;
+}
+
+/* Center Logo */
+.navbar-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-logo {
+  height: 55px;
+}
+
+/* Right Section */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar-socials {
+  display: flex;
+  gap: 12px;
+  font-size: 1.2rem;
+}
+
+.navbar-socials a {
+  color: white;
+  transition: color 0.3s;
+}
+
+/*.navbar-socials a:hover {
+  color: maroon;
+}*/
+
+.navbar-btn {
+  background-color: maroon;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.navbar-btn:hover {
+  background-color: #800000;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: white;
+  margin-left: 15px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar-center {
+    order: 1;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+    display: none;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-right {
+    order: 2;
+    width: auto;
+  }
+
+  .hamburger {
+    display: block;
+    order: 3; /* Always last */
+  }
+}

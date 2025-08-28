@@ -1,0 +1,38 @@
+ .get-the-app-now {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: white;
+}
+
+.get-the-app-now-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #c47f74da; /* same red tone as screenshot */
+  margin-bottom: 15px;
+}
+
+.get-the-app-now-subtitle {
+  font-size: 1.2rem;
+  color: #000;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.get-the-app-now-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.get-the-app-now-buttons img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.2s ease-in-out;
+}
+
+.get-the-app-now-buttons img:hover {
+  transform: scale(1.05);
+}
+

@@ -1,0 +1,37 @@
+.get-the-app-now {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: white;
+}
+
+.get-the-app-now-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #b33a3a; /* same red tone as screenshot */
+  margin-bottom: 15px;
+}
+
+.get-the-app-now-subtitle {
+  font-size: 1.2rem;
+  color: #000;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.get-the-app-now-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.store-badge {
+  height: 60px;        /* same height */
+  width: 200px;        /* same width for both */
+  object-fit: contain;
+  transition: transform 0.2s ease-in-out;
+}
+
+.store-badge:hover {
+  transform: scale(1.05);
+}

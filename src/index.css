@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+html, body {
+  overscroll-behavior: none; /* Prevents the scroll bounce */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0); /* or your site background color*/
+}
