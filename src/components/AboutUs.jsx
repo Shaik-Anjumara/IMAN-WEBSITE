@@ -1,12 +1,13 @@
  import React from "react";
 import aboutusImage from "../assets/aboutus.png";  
-import "../styles/AboutApp.css";
+ 
 
 const AboutUs = () => {
   return (
     <section id="about-us" className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-6 lg:px-12">
-        <h2 className="text-4xl font-bold text-center text-[#b33a3a] mb-10">About Us</h2>
+        <h2 className
+        ="text-4xl font-bold text-center text-[#b33a3a] mb-10">About Us</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h3 className="text-2xl font-semibold text-[#b33a3a] mb-4">

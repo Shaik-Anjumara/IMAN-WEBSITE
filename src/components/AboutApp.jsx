@@ -7,7 +7,8 @@
   FaQuran,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
+ 
+import "../styles/AboutApp.css";
 const AboutApp = () => {
   return (
     <section id="aboutapp">
@@ -31,43 +32,43 @@ const AboutApp = () => {
 
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-y-12 gap-x-12 text-center">
-          
-          {/* Daily Devotionals */}
-          <Link to="/devotionals" className="flex flex-col items-center hover:scale-105 transition">
+          {/* Card 1 */}
+
+         <Link to="/devotionals" className="flex flex-col items-center hover:scale-105 transition">
             <FaBookOpen className="text-5xl text-[#b33a3a] mb-4" />
             <h4 className="font-bold text-lg">Daily Devotionals</h4>
             <p>Start each day with curated verses.</p>
           </Link>
 
-          {/* Quran Access */}
+          {/* Card 2 */}
           <Link to="/quran" className="flex flex-col items-center hover:scale-105 transition">
             <FaQuran className="text-5xl text-[#b33a3a] mb-4" />
             <h4 className="font-bold text-lg">Quran Access</h4>
             <p>Read and study the Quran in multiple languages.</p>
           </Link>
 
-          {/* Nasheeds */}
+          {/* Card 3 */}
           <Link to="/nasheeds" className="flex flex-col items-center hover:scale-105 transition">
             <FaMusic className="text-5xl text-[#b33a3a] mb-4" />
             <h4 className="font-bold text-lg">Nasheeds</h4>
             <p>Listen to Islamic songs & recitations.</p>
           </Link>
 
-          {/* Games & Quiz */}
+          {/* Card 4 (Games & Quiz → separate page) */}
           <Link to="/games" className="flex flex-col items-center hover:scale-105 transition">
             <FaGamepad className="text-5xl text-[#b33a3a] mb-4" />
             <h4 className="font-bold text-lg">Games & Quiz</h4>
             <p>Play Islamic quizzes and earn rewards.</p>
           </Link>
 
-          {/* Community News */}
+          {/* Card 5 */}
           <Link to="/community" className="flex flex-col items-center hover:scale-105 transition">
             <FaUsers className="text-5xl text-[#b33a3a] mb-4" />
             <h4 className="font-bold text-lg">Community News</h4>
             <p>Stay up to date with local events & announcements.</p>
           </Link>
 
-          {/* Event Calendar */}
+          {/* Card 6 */}
           <Link to="/events" className="flex flex-col items-center hover:scale-105 transition">
             <FaCalendarAlt className="text-5xl text-[#b33a3a] mb-4" />
             <h4 className="font-bold text-lg">Event Calendar</h4>

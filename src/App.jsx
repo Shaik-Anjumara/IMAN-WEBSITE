@@ -1,7 +1,5 @@
  // src/App.jsx
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-// Components
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import AboutUs from "./components/AboutUs";
